@@ -16,16 +16,24 @@
                     </h2>
                 </div>
                 <div class="jumbo-body">
-                    <form id="schoolForm" autocomplete="off">
+                    <form id="schoolForm">
                         <div class="bar">
                             <div class="inputContainer">
-                                <input
+                                <!--input
                                     class="fileInput"
                                     placeholder="Enter your File"
                                     spellcheck="false"
                                     autofocus
                                     id="fileInput"
-                                />
+                                /> -->
+                                <input type = "file" placeholder = "Enter Your File" id = "fileInput" multiple>
+                                <script>
+                                    const fileSelector = document.getElementById('fileInput');
+                                    fileSelector.addEventListener('change',(event) => {
+                                        const fileList = event.target.files;
+                                        console.log(fileList);
+                                    })
+                                </script>
                             </div>
                             <div class="buttonContainer">
                                 <input
