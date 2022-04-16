@@ -26,7 +26,7 @@
                                     autofocus
                                     id="fileInput"
                                 /> -->
-                                <input class = "fileInput" type = "file" placeholder = "Enter Your File" id = "fileInput" multiple>
+                                <input class = "fileInput" type = "file" accept = ".csv, .dat, .xslx" id = "fileInput" multiple>
                                 <script>
                                     const fileSelector = document.getElementById('fileInput');
                                     fileSelector.addEventListener('change',(event) => {
